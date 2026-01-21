@@ -127,7 +127,7 @@
 
     // Personal greeting
     if(guestPayload && guestPayload.name){
-      personalGreeting.textContent = `Dear ${guestPayload.name}, we can’t wait to celebrate with you.`;
+      personalGreeting.textContent = `Dear  ${guestPayload.name}, we can’t wait to celebrate with you.`;
       // Keep the design clean: no seats / invitation meta text in Wishes section
       if(inviteMeta) inviteMeta.textContent = '';
       rsvpName.value = guestPayload.name;
