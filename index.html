@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alvin weds Josna | Wedding Invitation</title>
+  <meta name="description"
+    content="Wedding invitation of Alvin & Josna – Betrothal on 20 April 2026 at Lourdes Church, Kottayam and Wedding on 26 April 2026 at Good Shepherd Church, Padannakkad, Kanhangad, Kerala." />
+
+  <!-- Refined editorial fonts (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="theme-white">
+
+  <!-- Invitee Gate (template-style minimal) -->
+  <div id="gate" class="gate" aria-hidden="false">
+    <div class="gate__card">
+      <div class="gate__top">
+        <div class="kicker" aria-hidden="true">&nbsp;</div>
+        <h1 class="gate__title">You’re invited</h1>
+        <p class="gate__hint">Enter your name and invite code to open your personal invitation.</p>
+      </div>
+
+      <form id="gateForm" class="gate__form" autocomplete="off">
+        <label class="sr-only" for="guestName">Your name</label>
+        <input id="guestName" name="guestName" type="text" placeholder="Your name (e.g., Amal Mathew)" />
+        <label class="sr-only" for="inviteCode">Invite code</label>
+        <input id="inviteCode" name="inviteCode" type="text" placeholder="Invite code (required)" />
+        <button type="submit" class="btn">Open Invitation</button>
+      </form>
+
+      <div id="gateMsg" class="gate__msg" role="status" aria-live="polite"></div>
+
+      <div class="gate__footer">
+        <button id="copyLink" class="link" type="button">Copy my invite link</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Frame (like the template screenshot) -->
+  <div class="pageFrame" id="pageFrame">
+    <!-- Site -->
+    <header class="site-header site-header--template">
+      <div class="container header__inner header__inner--template">
+        <nav class="nav nav--left" aria-label="Primary">
+          <a href="#details">Details</a>
+          <a href="#travel">Travel &amp; stay</a>
+          <a href="#photos">Photos</a>
+        </nav>
+
+        <a class="brand brand--center" href="#top" aria-label="Back to top">
+          <span class="brand__serif">Alvin</span>
+          <span class="brand__amp">&</span>
+          <span class="brand__serif">Josna</span>
+        </a>
+
+        <div class="header__right">
+          <button id="openInvite" class="chip chip--ghost" type="button">Invite</button>
+          <button id="musicBtn" class="chip" type="button" aria-pressed="false">Music: Off</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top" class="main" data-locked="true">
+
+      <!-- HERO (template layout) -->
+      <div class="heroBg">
+        <section class="heroT">
+          <div class="container heroT__wrap">
+            <!-- Removed per request (no name heading above the date) -->
+
+            <div class="heroT__date" aria-label="Wedding date">
+              <span class="date__num">26</span>
+              <span class="date__dot">·</span>
+              <span class="date__num">04</span>
+              <span class="date__dot">·</span>
+              <span class="date__num">2026</span>
+            </div>
+
+            <p class="heroT__tagline">Join us as we begin a new journey of love, joy and eternal happiness.</p>
+
+            <p id="personalGreeting" class="heroT__greeting">&nbsp;</p>
+
+          </div>
+        </section>
+
+        <!-- DETAILS -->
+
+        <!-- DETAILS -->
+        <section id="details" class="section section--template detailsCenter">
+          <div class="container detailsCenter__wrap">
+
+
+
+            <p class="detailsCenter__note muted" data-event="Betrothal">
+              Betrothal · <strong>20 April 2026</strong> · Lourdes Church, Kottayam, Kerala
+            </p>
+
+            <div class="detailsStack" data-event="Wedding">
+              <article class="card card--simple">
+                <h3 class="card__title">Ceremony</h3>
+                <p class="card__text">
+                  <strong>26 April 2026 · 3:30 PM</strong><br>
+                  Good Shepherd Church, Padannakkad, Kanhangad, Kerala
+                </p>
+              </article>
+
+              <div class="bibleInline" aria-label="Bible love quote">
+                <p class="bibleInline__text"><strong><em>“Love is patient, love is kind.”</em></strong> <span
+                    class="bibleInline__ref">1 Corinthians 13:4</span></p>
+              </div>
+
+              <article class="card card--simple">
+                <h3 class="card__title">Reception</h3>
+                <p class="card__text">
+                  Reception & dinner to follow at <strong>Bekal Club, Padannakkad</strong>.<br>
+                  Hosted with love by <strong>Malabar Catering Services, Chittarikal</strong>.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- /heroBg -->
+
+      <section class="bibleSep">
+        <div class="container">
+          <p class="bibleSep__text"><strong><em>“Many waters cannot quench love.”</em></strong> <span
+              class="bibleSep__ref">Song of Solomon 8:7</span></p>
+        </div>
+      </section>
+
+
+      <!-- SCHEDULE (template banner) -->
+      <section id="schedule" class="banner" data-event="Wedding">
+        <div class="banner__bg" aria-hidden="true"></div>
+        <div class="container banner__inner">
+          <div class="banner__kicker">HERE’S A SNEAK PEEK OF</div>
+          <h2 class="banner__title">Our Special Day’s Schedule</h2>
+
+          <div class="banner__times" role="list" aria-label="Schedule highlights">
+            <div class="time" role="listitem">
+              <div class="time__t">3:00 PM</div>
+              <div class="time__l">Arrivals</div>
+            </div>
+            <div class="time" role="listitem">
+              <div class="time__t">3:30 PM</div>
+              <div class="time__l">Syro Malabar Nuptial Mass</div>
+            </div>
+            <div class="time" role="listitem">
+              <div class="time__t">5:15 PM</div>
+              <div class="time__l">Reception</div>
+            </div>
+            <div class="time" role="listitem">
+              <div class="time__t">6:00 PM</div>
+              <div class="time__l">Dinner</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bibleSep">
+        <div class="container">
+          <p class="bibleSep__text"><strong><em>“Two are better than one.”</em></strong> <span
+              class="bibleSep__ref">Ecclesiastes 4:9</span></p>
+        </div>
+      </section>
+
+
+      <!-- LOCATION (template layout) -->
+      <section id="location" class="section section--template" data-event="Wedding">
+        <div class="container locationT">
+          <h2 class="h2 locationT__title">Location</h2>
+
+          <div class="locationT__grid">
+            <div class="locationT__left">
+              <p class="loc__name">GOOD SHEPHERD CHURCH</p>
+              <p class="loc__sub muted">Padannakkad, Kanhangad, Kerala</p>
+              <a class="mini" target="_blank" rel="noopener"
+                href="https://www.google.com/maps/search/?api=1&query=Good%20Shepherd%20Church%20Padannakkad%20Kanhangad">Open
+                in Google Maps</a>
+            </div>
+
+
+            <div class="locationT__right">
+              <p class="loc__name">BEKAL CLUB</p>
+              <p class="loc__sub muted">Padannakkad, Kerala</p>
+              <a class="mini" target="_blank" rel="noopener"
+                href="https://www.google.com/maps/search/?api=1&query=Bekal%20Club%20Padannakkad">Open in Google
+                Maps</a>
+            </div>
+          </div>
+
+          <div class="locationT__cta">
+            <a class="btn btn--ghost" href="#travel">Travel &amp; stay</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bibleSep">
+        <div class="container">
+          <p class="bibleSep__text"><strong><em>“Love binds everything together in perfect harmony.”</em></strong> <span
+              class="bibleSep__ref">Colossians 3:14</span></p>
+        </div>
+      </section>
+
+
+      <!-- COUNTDOWN (template banner) -->
+      <section class="countBanner" aria-label="Countdown to wedding">
+        <div class="countBanner__bg" aria-hidden="true"></div>
+        <div class="container countBanner__inner">
+          <div class="banner__kicker">LET THE COUNTDOWN BEGIN</div>
+          <div class="countBanner__grid" role="group" aria-label="Countdown values">
+            <div class="cb">
+              <div id="cdDays" class="cb__num">—</div>
+              <div class="cb__lab">Days</div>
+            </div>
+            <div class="cb">
+              <div id="cdHours" class="cb__num">—</div>
+              <div class="cb__lab">Hours</div>
+            </div>
+            <div class="cb">
+              <div id="cdMins" class="cb__num">—</div>
+              <div class="cb__lab">Minutes</div>
+            </div>
+            <div class="cb">
+              <div id="cdSecs" class="cb__num">—</div>
+              <div class="cb__lab">Seconds</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bibleSep">
+        <div class="container">
+          <p class="bibleSep__text"><strong><em>“We love because He first loved us.”</em></strong> <span
+              class="bibleSep__ref">1 John 4:19</span></p>
+        </div>
+      </section>
+
+
+      <!-- PHOTOS + DRESS CODE -->
+      <section id="photos" class="section section--template">
+        <div class="container">
+          <div class="twoCards">
+            <article class="card card--simple">
+              <h3 class="card__title">Share Your Photos</h3>
+              <p class="card__text">Captured something beautiful? Upload your photos here so you don’t forget later.</p>
+
+              <div class="upload">
+                <input id="photoInput" class="upload__input" type="file" accept="image/*" multiple>
+                <div id="photoPreview" class="photoPreview" aria-label="Selected photos preview"></div>
+                <button id="sharePhotos" class="btn btn--ghost upload__share" type="button">Share photos on
+                  WhatsApp</button>
+                <p class="form__small muted">Tip: WhatsApp will open with a message. Add your photos as attachments and
+                  send.</p>
+              </div>
+            </article>
+
+            <article class="card card--simple">
+              <h3 class="card__title">Dress Code</h3>
+              <p class="card__text">Classic and elegant. Feel free to wear neutrals, black, white, or soft tones, keep
+                it timeless and comfortable.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="bibleSep">
+        <div class="container">
+          <p class="bibleSep__text"><strong><em>“And over all these virtues put on love.”</em></strong> <span
+              class="bibleSep__ref">Colossians 3:14</span></p>
+        </div>
+      </section>
+
+
+      <section id="travel" class="section section--tight">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Travel &amp; stay</h2>
+            <p class="muted">If you’re travelling from afar, plan a relaxed stay in Kanhangad / Bekal area.</p>
+          </div>
+          <div class="cards cards--two">
+            <article class="card">
+              <h3 class="card__title">Nearest airport</h3>
+              <p class="card__text">Kannur International Airport (CNN) · Mangalore Airport (IXE)</p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">Nearby stay</h3>
+              <p class="card__text">Bekal &amp; Kanhangad have many options close to the church and reception venue.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bibleSep">
+        <div class="container">
+          <p class="bibleSep__text"><strong><em>“Let love and faithfulness never leave you.”</em></strong> <span
+              class="bibleSep__ref">Proverbs 3:3</span></p>
+        </div>
+      </section>
+
+
+      <!-- IMPORTANT PEOPLE (from your original index file) -->
+      <section id="people" class="section section--tight">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Important People</h2>
+            <p class="muted">The hearts behind this day.</p>
+          </div>
+
+
+          <div class="cards cards--two">
+            <article class="card">
+              <h3 class="card__title">Parents of the groom</h3>
+              <p class="card__text">
+                <strong>Late Mr K. M. Jose</strong> &amp; <strong>Mrs Ancy E.</strong><br>
+                <span class="muted">Late Mr K. M. Jose: Postal Assistant · Mrs Ancy E.: Headmistress, GLPS
+                  Keekkamkottu</span>
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Parents of the bride</h3>
+              <p class="card__text">
+                <strong>Mr Prakash Chacko</strong> &amp; <strong>Mrs Lovely Prakash</strong><br>
+                <span class="muted">Mr Prakash Chacko: Tax Consultant · Mrs Lovely Prakash: Teacher</span>
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Siblings (Groom side)</h3>
+              <p class="card__text">
+                <strong>Sarga Jose</strong><br>
+                <span class="muted">Speech Therapist, Bengaluru · Married to <strong>Dominic George</strong> Software
+                  Professional and has a son who is 4 years old - Dave Dominic George (Suttu)
+                  Bengaluru</span>
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Siblings (Bride side)</h3>
+              <p class="card__text">
+                <strong>Jostin C. Prakash</strong><br>
+                <span class="muted">Software Professional, Perth · Married to <strong>Dr Jinet Joseph</strong>, MDS
+                  (Lecturer, UWA)
+                  Perth</span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Removed per request: no bible quote separator below Important People -->
+
+      <!-- WISHES -->
+      <section id="wishes" class="section">
+        <div class="container section__grid">
+          <div class="section__left">
+            <h2 class="h2">Wishes</h2>
+            <p class="lead">Send a WhatsApp message, blessings, prayers, or anything from your heart.</p>
+            <p class="muted" id="inviteMeta">&nbsp;</p>
+          </div>
+
+          <div class="section__right">
+            <form id="rsvpForm" class="form">
+              <input id="rsvpName" type="hidden" value="">
+
+              <div class="field">
+                <label for="rsvpNotes">Your WhatsApp message</label>
+                <textarea id="rsvpNotes" rows="5" placeholder="Write your message…"></textarea>
+              </div>
+
+              <div class="btnrow">
+                <button class="btn" type="submit">Send on WhatsApp</button>
+              </div>
+
+              <p class="form__small muted">This will open WhatsApp with your message pre-filled. You can edit it before
+                sending.</p>
+              <div id="rsvpMsg" class="form__msg" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="bibleSep">
+        <div class="container">
+          <p class="bibleSep__text"><strong><em>“Therefore a man shall leave his father and his mother and hold fast to
+                his wife, and they shall become one flesh.”</em></strong> <span class="bibleSep__ref">Genesis
+              2:24</span></p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div class="muted">Alvin × Josna · 2026</div>
+          <div class="muted">aLJo</div>
+        </div>
+      </footer>
+    </main>
+
+  </div><!-- /pageFrame -->
+
+  <audio id="bgm" src="assets/audio/bgm.mp3" preload="none"></audio>
+
+  <script src="guestlist.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
